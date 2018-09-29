@@ -41,7 +41,16 @@
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
   <p>&nbsp;Add a target="_blank" attribute instead.</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <div>
+    <ul>
+      <li>_blank - Opens the linked document in a new window or tab.</li>
+      <li>_self - Opens the linked document in the same window/tab as it was clicked (this is default).</li>
+      <li>_parent - Opens the linked document in the parent frame.</li>
+      <li>_top - Opens the linked document in the full body of the window.</li>
+      <li>framename - Opens the linked document in a named frame.</li>
+    </ul>
+    See <a href="https://www.w3schools.com/Html/html_links.asp" title="w3schools.com HTML Links">here</a> for a more detailed explanation.
+  </div>
   <hr>
   <p><b>11. Which of these elements are all &lt;table&gt; elements?</b></p>
   <p><b>You answered: </b></p>&lt;table&gt;&lt;tr&gt;&lt;td&gt;<p style='color:green'>&nbsp;Correct Answer!</p>
@@ -61,23 +70,23 @@
   <p><b>16. What is the correct HTML for making a text input field?</b></p>
   <p><b>You answered: </b></p>&lt;input type="textfield"&gt;<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;&lt;input type="text"&gt;</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;&lt;input type="text" name="this-is-sent-along" value="preset-value"&gt; is the normal way to do it as far as I know. Furthermore, &lt;input&gt; defaults to the text attribute if none is explicitly given.</p>
   <hr>
   <p><b>17. What is the correct HTML for making a drop-down list?</b></p>
   <p><b>You answered: </b></p>&lt;input type="dropdown"&gt;<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;&lt;select name="this-is-sent-along"&gt;</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;The individual options are then tagged as &lt;option value="example value"&gt;example option&lt;/option&gt;. You can also add an attribute called selected to make an option selected by default. There is a lot more info on <a href="https://www.w3schools.com/html/html_form_elements.asp" title="w3schools html form elements">here</a>.</p>
   <hr>
   <p><b>18. What is the correct HTML for making a text area?</b></p>
   <p><b>You answered: </b></p>&lt;input type="textarea"&gt;<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;&lt;textarea&gt;</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;I have none but I think it's important to note here that not all input fields are an input element.</p>
   <hr>
   <p><b>19. What is the correct HTML for inserting an image?</b></p>
   <p><b>You answered: </b></p>&lt;img src="image.gif" alt="MyImage"&gt;<p style='color:green'>&nbsp;Correct Answer!</p>
@@ -106,16 +115,25 @@
   <p><b>27. Which HTML element is used to specify a footer for a document or section?</b></p>
   <p><b>You answered: </b></p>&lt;bottom&gt;<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;&lt;footer&gt;</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <div>&nbsp;The &lt;footer&gt; tag element should contain information about its containing element:
+    <ul>
+      <li>authorship information</li>
+      <li>copyright information</li>
+      <li>contact information</li>
+      <li>sitemap</li>
+      <li>back to top links</li>
+      <li>related documents</li>
+    </ul>
+  </div>
   <hr>
   <p><b>28. In HTML, you can embed SVG elements directly into an HTML page.</b></p>
   <p><b>You answered: </b></p>False<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;True</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;It's crazy but doable. More information can be found <a href="https://www.w3schools.com/html/html5_svg.asp" title="w3schools html5 svg">here</a></p>
   <hr>
   <p><b>29. What is the correct HTML element for playing video files?</b></p>
   <p><b>You answered: </b></p>&lt;video&gt;<p style='color:green'>&nbsp;Correct Answer!</p>
@@ -132,9 +150,9 @@
   <p><b>33. Graphics defined by SVG is in which format?</b></p>
   <p><b>You answered: </b></p>CSS<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;XML</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;There's not much to say about this. SVG is simply an XML-based image format.</p>
   <hr>
   <p><b>34. The HTML &lt;canvas&gt; element is used to:</b></p>
   <p><b>You answered: </b></p>draw graphics<p style='color:green'>&nbsp;Correct Answer!</p>
@@ -142,30 +160,30 @@
   <p><b>35. In HTML, which attribute is used to specify that an input field must be filled out?</b></p>
   <p><b>You answered: </b></p>validate<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;required</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;The attribute, required, works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio and file.</p>
   <hr>
   <p><b>36. Which input type defines a slider control?</b></p>
   <p><b>You answered: </b></p>slider<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;range</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;The &lt;range&gt; tag has the following useful attributes: min, max and step.</p>
   <hr>
   <p><b>37. Which HTML element is used to display a scalar measurement within a range?</b></p>
   <p><b>You answered: </b></p>&lt;measure&gt;<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;&lt;meter&gt;</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;It essentially looks like a bar or guage that's not quite filled up. More information can be gleaned <a href="https://www.w3schools.com/tags/tag_meter.asp" title="w3schools meter tag">here</a>.</p>
   <hr>
   <p><b>38. Which HTML element defines navigation links?</b></p>
   <p><b>You answered: </b></p>&lt;navigation&gt;<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;&lt;nav&gt;</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;The nav element should contain the main navigational links of a page. More information can be found <a href="https://www.w3schools.com/Tags/tag_nav.asp" title="w3schools nav tag">here</a>.</p>
   <hr>
   <p><b>39. In HTML, what does the &lt;aside&gt; element define?</b></p>
   <p><b>You answered: </b></p>Content aside from the page content<p style='color:green'>&nbsp;Correct Answer!</p>
@@ -173,9 +191,9 @@
   <p><b>40. Which HTML element is used to specify a header for a document or section?</b></p>
   <p><b>You answered: </b></p>&lt;head&gt;<p style='color:red'>&nbsp;Wrong Answer!</p>
   <p style='color:blue'><b>&nbsp;Correction:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;header</p>
   <p><b>&nbsp;Explanation:</b></p>
-  <p>&nbsp;</p>
+  <p>&nbsp;The &lt;heder&gt; element represents a container for introductory content or a set of navigation links. More information can be found on <a href="https://www.w3schools.com/tags/tag_header.asp" title="w3schools header tag">here</a>.</p>
 </body>
 
 </html>
