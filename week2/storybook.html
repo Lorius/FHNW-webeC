@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+td><!DOCTYPE html>
 <html>
 
 <head>
@@ -30,6 +30,7 @@
     h4,
     h5,
     h6 {
+      text-align: center;
       font-weight: bold;
     }
 
@@ -40,12 +41,12 @@
 
     td,
     th {
-      border: 1px solid #ddd;
+      border: 1px solid #dddddd;
       padding: 0.5em;
     }
 
     thead {
-      background-color: #ed8;
+      background-color: #ffb814;
     }
 
     abbr,
@@ -65,6 +66,18 @@
       position: absolute;
       background-color: white;
       color: orange;
+    }
+    caption {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+
+    .holiday {
+      color: gray;
+    }
+
+    .exercise {
+      font-weight: bold;
     }
   </style>
   <title>Storybook for the Web Engineering Module</title>
@@ -97,79 +110,91 @@
           </thead>
           <tbody>
             <tr>
-              <th>18.09.18</th>
-              <th>12:15 - 15:00</th>
-              <th>HTML</th>
+              <td>18.09.18</td>
+              <td>12:15 - 15:00</td>
+              <td>HTML</td>
             </tr>
             <tr>
-              <th>25.09.18</th>
-              <th>12:15 - 15:00</th>
-              <th>CSS</th>
+              <td>25.09.18</td>
+              <td>12:15 - 15:00</td>
+              <td>CSS</td>
             </tr>
             <tr>
-              <th>02.10.18</th>
-              <th>12:15 - 15:00</th>
-              <th>Grails, Web, MVC, Test</th>
+              <td>02.10.18</td>
+              <td>12:15 - 15:00</td>
+              <td>Grails, Web, MVC, Test</td>
             </tr>
             <tr>
-              <th>09.10.18</th>
-              <th>12:15 - 15:00</th>
-              <th>GSP, Template, Taglib, Layout</th>
+              <td>09.10.18</td>
+              <td>12:15 - 15:00</td>
+              <td>GSP, Template, Taglib, Layout</td>
             </tr>
             <tr>
-              <th>16.10.18</th>
-              <th>12:15 - 15:00</th>
-              <th>Javascript</th>
+              <td>16.10.18</td>
+              <td>12:15 - 15:00</td>
+              <td>Javascript</td>
             </tr>
             <tr>
-              <th>23.10.18</th>
-              <th>12:15 - 15:00</th>
-              <th>Consolidation training</th>
+              <td>23.10.18</td>
+              <td>12:15 - 15:00</td>
+              <td>Consolidation training</td>
             </tr>
             <tr>
-              <th>30.10.18</th>
-              <th>12:15 - 15:00</th>
-              <th>Persistence, DB-Access (GORM)</th>
+              <td>30.10.18</td>
+              <td>12:15 - 15:00</td>
+              <td>Persistence, DB-Access (GORM)</td>
             </tr>
             <tr>
-              <th>06.11.18</th>
-              <th>12:15 - 15:00</th>
-              <th>REST, Services</th>
+              <td>06.11.18</td>
+              <td>12:15 - 15:00</td>
+              <td>REST, Services</td>
             </tr>
             <tr>
-              <th>13.11.18</th>
-              <th>12:15 - 15:00</th>
-              <th>Role-based Security</th>
+              <td>13.11.18</td>
+              <td>12:15 - 15:00</td>
+              <td>Role-based Security</td>
+            </tr>
+            <tr class="exercise">
+              <td>20.11.18</td>
+              <td>12:15 - 15:00</td>
+              <td>Übungsvorbereitung ** Anwesenheitspflicht **</td>
+            </tr>
+            <tr class="holiday">
+              <td>27.11.18</td>
+              <td colspan="2">Projekt</td>
             </tr>
             <tr>
-              <th>20.11.18</th>
-              <th>12:15 - 15:00</th>
-              <th>Übungsvorbereitung ** Anwesenheitspflicht **</th>
+              <td>04.12.18</td>
+              <td>12:15 - 15:00</td>
+              <td>Übungsanlass</td>
             </tr>
             <tr>
-              <th>04.12.18</th>
-              <th>12:15 - 15:00</th>
-              <th>Übungsanlass</th>
+              <td>11.12.18</td>
+              <td>12:15 - 15:00</td>
+              <td>Responsive / Mobile Web</td>
+            </tr>
+            <tr class="exercise">
+              <td>18.12.18</td>
+              <td>12:15 - 15:00</td>
+              <td>Weihnachtsvorlesung, ** Übungsabgabe **</td>
+            </tr>
+            <tr class="holiday">
+              <td>25.12.18</td>
+              <td colspan="2">Weihnachtsferien</td>
+            </tr>
+            <tr class="holiday">
+              <td>01.01.19</td>
+              <td colspan="2">Weihnachtsferien</td>
             </tr>
             <tr>
-              <th>11.12.18</th>
-              <th>12:15 - 15:00</th>
-              <th>Responsive / Mobile Web</th>
+              <td>08.01.19</td>
+              <td>12:15 - 15:00</td>
+              <td>Deployment</td>
             </tr>
             <tr>
-              <th>18.12.18</th>
-              <th>12:15 - 15:00</th>
-              <th>Weihnachtsvorlesung, ** Übungsabgabe **</th>
-            </tr>
-            <tr>
-              <th>08.01.19</th>
-              <th>12:15 - 15:00</th>
-              <th>Deployment</th>
-            </tr>
-            <tr>
-              <th>15.01.19</th>
-              <th>12:15 - 15:00</th>
-              <th>Prüfungsvorbereitung</th>
+              <td>15.01.19</td>
+              <td>12:15 - 15:00</td>
+              <td>Prüfungsvorbereitung</th>
             </tr>
 
 
