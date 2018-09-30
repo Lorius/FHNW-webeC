@@ -1,43 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+:root {
+	--white:     snow;
+	--blue:      cornflowerblue;
+	--dark-blue: #154eb7; /* this is just a dark shade of cornflowerblue */
+	--gray:      gray;
+}
+
 * {
 	font-family: 'Roboto', sans-serif;
 }
 
-body {
-	/*
-	background-color: greenyellow;
-	*/
-	background-image: url("https://asciich.ch/wordpress/wp-content/uploads/2013/08/wpid-IMG_20130811_1051421.jpg");
-
-	background-size: auto 100%;
+html {
+	background-image:    url("https://asciich.ch/wordpress/wp-content/uploads/2013/08/wpid-IMG_20130811_1051421.jpg");
+	background-size:     auto 100%;
+	background-position: 50% 50%;
+	text-align:          center;
 }
 
-body {
-	text-align: center;
-}
+/* general prettification code */
 
 header, main, footer {
-	margin-left:      auto;
-	margin-right:     auto;
-	padding:          0.5em;
+	padding: 0.5em;
+}
+
+footer {
+	margin-right: 5%;
+	text-align:   right;
+}
+
+body {
+	margin:           0.5em auto 0.5em auto;
+	border-radius:    1em;
+	padding:          1em;
+	background-color: var(--white);
+	opacity:          0.9;
 	width:            40em;
-	background-color: snow;
-	opacity: 0.9;
 }
 
 article {
-	border:          1px none black;
-	border-collapse: collapse;
-	border-radius:   1em;
-	padding:         2em;
-	text-align:      left;
+	padding:    1em;
+	text-align: left;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	text-align:  center;
 	font-weight: bold;
 }
+
+a {
+	color: var(--dark-blue);
+}
+
+/* the code below is for the table */
 
 table {
 	border-collapse: collapse;
@@ -46,28 +61,66 @@ table {
 
 td, th {
 	padding: 0.5em;
+	border:  1px solid var(--blue);
 }
 
-td {border: 1px solid cornflowerblue;}
+th {
+	color: var(--white);
+}
+
+.no-right-border {
+	border-right: 0;
+}
+
+.no-left-border {
+	border-left: 0;
+}
+
+tfoot > tr > td {
+	border: 0;
+}
 
 thead {
-	background-color: cornflowerblue;
+	background-color: var(--blue);
 }
 
-abbr, dfn {
+/* the tooltip code below was copy pasted from w3schools and only just changed a bit */
+
+.tooltip {
+	position:        relative;
+	display:         inline-block;
 	text-decoration: underline;
+	font-style:      italic;
 }
 
-abbr:hover, dfn:hover {
-	color:      white;
-	background: darkgray;
-}
-
-abbr[title]:hover:after, dfn[title]:hover:after {
-	content:          attr(title);
+.tooltip .tooltiptext {
+	visibility:       hidden;
+	background-color: var(--blue);
+	color:            var(--white);
+	text-align:       center;
+	padding:          0.4em;
+	border-radius:    0.4em;
+	font-style:       normal;
 	position:         absolute;
-	background-color: white;
-	color:            orange;
+	z-index:          1;
+	top:              100%;
+	left:             50%;
+	margin-left:      -60px;
+}
+
+.tooltip .tooltiptext::after {
+	content:      " ";
+	position:     absolute;
+	bottom:       100%;
+	left:         50%;
+	margin-left:  -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent var(--blue) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
 }
 
 caption {
@@ -76,7 +129,7 @@ caption {
 }
 
 .holiday {
-	color: gray;
+	color: var(--gray);
 }
 
 .exercise {
