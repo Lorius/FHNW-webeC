@@ -1,67 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
-    text-align: center;
+	/*
+	background-color: greenyellow;
+	*/
+	background-image: url("https://asciich.ch/wordpress/wp-content/uploads/2013/08/wpid-IMG_20130811_1051421.jpg");
+
+	background-size: auto 100%;
+}
+
+body {
+	text-align: center;
 }
 
 header, main, footer {
-    margin-left:  auto;
-    margin-right: auto;
-    width:        40em;
+	margin-left:      auto;
+	margin-right:     auto;
+	padding:          0.5em;
+	width:            40em;
+	background-color: snow;
+	opacity: 0.9;
 }
 
 article {
-    text-align: left;
+	border:          1px none black;
+	border-collapse: collapse;
+	border-radius:   1em;
+	padding:         2em;
+	text-align:      left;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    text-align:  center;
-    font-weight: bold;
+	text-align:  center;
+	font-weight: bold;
 }
 
 table {
-    border-collapse: collapse;
-    width:           100%;
+	border-collapse: collapse;
+	width:           100%;
 }
 
 td, th {
-    border:  1px solid #dddddd;
-    padding: 0.5em;
+	padding: 0.5em;
 }
 
+td {border: 1px solid #91e8e2;}
+
 thead {
-    background-color: #ffb814;
+	background-color: #91e8e2;
 }
 
 abbr, dfn {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 abbr:hover, dfn:hover {
-    color:      white;
-    background: darkgray;
+	color:      white;
+	background: darkgray;
 }
 
 abbr[title]:hover:after, dfn[title]:hover:after {
-    content:          attr(title);
-    position:         absolute;
-    background-color: white;
-    color:            orange;
+	content:          attr(title);
+	position:         absolute;
+	background-color: white;
+	color:            orange;
 }
 
 caption {
-    font-size:   1.2em;
-    line-height: 1.5;
+	font-size:   1.2em;
+	line-height: 1.5;
 }
 
 .holiday {
-    color: gray;
+	color: gray;
 }
 
 .exercise {
-    font-weight: bold;
+	font-weight: bold;
 }
