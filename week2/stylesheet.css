@@ -13,7 +13,7 @@
 
 html {
 	background-image:    url("https://asciich.ch/wordpress/wp-content/uploads/2013/08/wpid-IMG_20130811_1051421.jpg");
-	background-size:     auto 100%;
+	background-size:     cover;
 	background-position: 50% 50%;
 	text-align:          center;
 }
