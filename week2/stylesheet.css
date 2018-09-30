@@ -48,10 +48,10 @@ td, th {
 	padding: 0.5em;
 }
 
-td {border: 1px solid #91e8e2;}
+td {border: 1px solid cornflowerblue;}
 
 thead {
-	background-color: #91e8e2;
+	background-color: cornflowerblue;
 }
 
 abbr, dfn {
