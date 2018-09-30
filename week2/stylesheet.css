@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+header, main, footer {
+    margin-left:  auto;
+    margin-right: auto;
+    width:        40em;
+}
+
+article {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align:  center;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width:           100%;
+}
+
+td, th {
+    border:  1px solid #dddddd;
+    padding: 0.5em;
+}
+
+thead {
+    background-color: #ffb814;
+}
+
+abbr, dfn {
+    text-decoration: underline;
+}
+
+abbr:hover, dfn:hover {
+    color:      white;
+    background: darkgray;
+}
+
+abbr[title]:hover:after, dfn[title]:hover:after {
+    content:          attr(title);
+    position:         absolute;
+    background-color: white;
+    color:            orange;
+}
+
+caption {
+    font-size:   1.2em;
+    line-height: 1.5;
+}
+
+.holiday {
+    color: gray;
+}
+
+.exercise {
+    font-weight: bold;
+}
